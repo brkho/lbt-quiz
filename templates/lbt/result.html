@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static "lbt/style.css" %}"/>
+        <title>Land Before Time Quiz</title>
+    </head>
+    <body id = "body">
+        <div id = "box">
+            <div id = "title">
+                Which Land Before Time II Character are You?
+            </div>
+            <div id = "container">
+                {% if result == "ozzy" %}
+                    <div class = "image">
+                        <b>
+                        <span class = "image_title">You are:</span><br>
+                        <img src = "http://i.imgur.com/2vjSP4M.jpg"><br>
+                        <span class = "ozzy">Ozzy!</span>
+                        </b>
+                    </div>
+                    You are the handsome, egg guzzling mastermind of the velociorapter duo from the Mysterious Beyond. Unlike your tree-tasting brother, Strut, you have a dreamy European accent and a gastronomic penchant for all things egg. Well done, you magnificent being!
+                {% else %}
+                    <div class = "image">
+                        <b>
+                        <span class = "image_title">You are:</span><br>
+                        <img src = "http://i.imgur.com/2vjSP4M.jpg"><br>
+                        <span class = "leaf">A leaf-loving, bush-burping, stem-smelling, garden-gorging, plant-popping, tree-tasting, dirt-devouring beast!</span>
+                        </b>
+                    </div>
+
+                    You imbecilic eater! Great green globs couldn't possibly be sweeter than a pile of eggs! You've got to have eggs thrice a day... at least! (slurp)
+                {% endif %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+#body {
+    background-color: #F5F5F5;
+    font-size: 14px;
+    font-family: helvetica, arial, sans-serif;
+}
+
+#title {
+    font-size: 16px;
+    color: #F5F5F5;
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#box {
+    position: relative;
+    top: 20px;
+    width: 600px;
+    height: 600px;
+    background-color: #212121;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#container {
+    position: relative;
+    left: 10px;
+    top: 35px;
+    height: 515px;
+    width: 540px;
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+}
+
+.image {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 300px;
+}
+
+.image_title{
+    font-size: 16px;
+}
+
+.ozzy {
+    font-size: 22px;
+}
+
+.leaf {
+    font-size: 16px;
+}

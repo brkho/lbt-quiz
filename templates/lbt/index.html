@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static "lbt/style.css" %}"/>
+        <title>Land Before Time Quiz</title>
+    </head>
+    <body id = "body">
+        <div id = "box">
+            <div id = "title">
+                Which Land Before Time II Character are You?
+            </div>
+            <div id = "container">
+                Do you ever find yourself awake at night pondering the eternal question, "Which Land Before Time II character am I?" Well, thanks to a group of student researchers at The Johns Hopkins University, those days are now over! Compiled from volumes of in-depth psychological analysis and character studies from the movie, these comprehensive questions will give you the definitive answer as to which Land Before Time II character you most closely resemble.<br><br><br>
+
+                Question 1 of 1: How often do you eat eggs in a given day?<br><br>
+
+                <form name="quiz" action="result" method="post">
+                    {% csrf_token %}
+                    <input type="radio" name="eggs" value="zero">I never eat eggs.<br>
+                    <input type="radio" name="eggs" value="one">Once.<br>
+                    <input type="radio" name="eggs" value="two">Twice!<br>
+                    <input type="radio" name="eggs" value="three">Thrice a day! (at least)<br><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </div>
+    </body>
+</html>
